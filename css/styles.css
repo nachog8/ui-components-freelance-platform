@@ -1,0 +1,90 @@
+body{
+    background-color: #efeeee;
+}
+
+.svg-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0px; /* Espacio entre las tarjetas */
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 0px 40px;
+    width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.card{
+    background: #ffffff;
+    border-radius: 15px;
+    width: 100%; /* Ajusta el ancho al tamaño de la celda de la cuadrícula */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:nth-child(1){
+    grid-row: span 2; /* Ajusta la altura a 2 veces el tamaño de la celda de la cuadrícula */
+    width: 250px;
+    height: 300px;
+}
+
+.card:nth-child(2){
+    grid-row: span 3; /* Ajusta la altura a 3 veces el tamaño de la celda de la cuadrícula */
+    width: 250px;
+    height: 400px;
+}
+
+.card:nth-child(3){
+    grid-row: span 2; /* Ajusta la altura a 2 veces el tamaño de la celda de la cuadrícula */
+    width: 250px;
+    height: 220px;
+}
+
+.card:nth-child(4){
+    grid-row: span 1; /* Ajusta la altura a 1 veces el tamaño de la celda de la cuadrícula */
+    width: 250px;
+    height: 150px;
+}
+
+.card-3{
+    text-align: center;
+    background: linear-gradient(to top, #d8acd8 20%, #ffffff 80%);
+}
+.titulo{
+    font-size: 15px;
+}
+
+.subtitulo{
+    color: #75727b;
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
+}
+
+button{
+	width: 90%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: black;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #05388f;
+}
