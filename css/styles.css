@@ -1,3 +1,6 @@
+@import url(https://db.onlinewebfonts.com/c/2573ef41df2486db14cf599142f0dc2f?family=Folio+Std+Medium);
+@import url(https://db.onlinewebfonts.com/c/a30d77d960c62713a93cca1a073d3dda?family=Folio+Std+Light);
+
 body {
     background-color: #efeeee;
     display: flex;
@@ -5,7 +8,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Folio Std Light";
 }
 
 section {
@@ -19,7 +22,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 40px; /* Espacio entre las tarjetas */
     height: 100%;
     width: 100%;
 }
@@ -33,16 +36,17 @@ section {
 }
 
 .card:nth-child(1) {
-    height: 330px; /* Altura específica */
+    height: 300px; 
     align-self: start;
 }
 
 .card:nth-child(2) {
-    height: 420px; /* Altura específica */
+    height: 380px; 
+    background: linear-gradient(to bottom, #393939 0%, #181717 60%);
 }
 
 .card:nth-child(3) {
-    height: 220px; /* Altura específica */
+    height: 240px; 
     text-align: center;
     background: linear-gradient(to top, #d8acd8 1%, #ffffff 50%);
     margin-top: -80px;
@@ -50,12 +54,12 @@ section {
 }
 
 .card:nth-child(4) {
-    height: 150px; /* Altura específica */
+    height: 170px; 
     align-self: end;
 }
 
 .titulo {
-    font-size: 15px;
+    font-size: 18px;
     margin: 5px 0;
 }
 
@@ -69,7 +73,7 @@ section {
 button {
     width: 90%;
     height: 40px;
-    margin: 10px auto;
+    margin: 20px auto;
     display: block;
     color: #fff;
     background: black;
@@ -89,18 +93,37 @@ button:hover {
     background: #424242;
 }
 
+.button-2 {
+    width: 90%;
+    height: 40px;
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    background: #397ff8;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icono {
     width: 70px;
     height: 70px;
-    margin: 15px 0;
+    margin: 15px 0px 25px 0px;
 }
 
 .persona{
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 0 auto; 
     display: block;
     margin: 0;
 }
@@ -119,10 +142,10 @@ button:hover {
     cursor: pointer;
 }
 .borde-like{
-    border: 0.2px solid #75727b;
     padding: 5px 5px 0px 5px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f6f7f8;
 }
 
 .header h3{
@@ -133,6 +156,7 @@ button:hover {
 .header-info {
     display: flex;
     flex-direction: column;
+    margin-right: 23px;
 }
 
 .header p {
@@ -205,8 +229,9 @@ button:hover {
 
 .header-2{
     display: flex;
-    justify-content: space-between; /* Opcional: para distribuir el espacio entre los elementos */
+    justify-content: space-between;
     align-items: flex-start;
+    margin: 8px 5px;
 }
 
 .header-2 h3{
@@ -214,11 +239,27 @@ button:hover {
     padding: 3px 0px;
 }
 
+.header-2 .titulo-card2{
+    margin: 0px 0px 0px 0px;
+    padding: 3px 0px;
+    color: #ffffff;
+}
+
 .borde{
     border: 0.2px solid #75727b;
     border-radius: 8px;
     padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.borde-2{
+    border: 0.2px solid #75727b;
+    border-radius: 8px;
+    padding: 5px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3e3e3e;
+    color: white;
+    text-align: center;
 }
 
 .mes-1 h3, .mes-2 h3 {
@@ -290,4 +331,169 @@ button:hover {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+}
+
+.ganancias{
+    color: #ffffff;
+}
+.ganancias h3{
+    margin: 10px 5px 5px 5px;
+    font-size: 12px;
+}
+.ganancias h2{
+    margin: 5px;
+    font-size: 25px;
+}
+.ganancias p{
+    margin: 5px;
+    font-size: 10px;
+}
+.ganancias span{
+    color: #3e3e3e;
+}
+.ganancias .monto{
+    color: #1fe03e;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Ancho total */
+    padding: 20px 0px;
+}
+
+.box {
+    background-color: #3e3e3e;
+    padding: 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box1 {
+    grid-column: 1; /* Primera columna */
+    grid-row: 1; /* Primera fila */
+}
+
+.box2 {
+    grid-column: 2; /* Segunda columna */
+    grid-row: 1; /* Primera fila */
+}
+
+.box3 {
+    grid-column: 1 / span 2; /* Abarca ambas columnas */
+    grid-row: 2; /* Segunda fila */
+}
+
+.box1 span, .box2 span{
+    padding: 0px;
+    color: #ffffff;
+}
+.box1 .num-g, .box2 .num-g{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1 h2, .box2 h2{
+    margin: 0px;
+    padding: 5px 0px 5px 10px;
+    font-size: 15px;
+    color: #727272;
+    text-align: start;
+}
+
+.box1 p, .box2 p{
+    margin: 0px;
+    padding: 0px 0px 5px 10px;
+    font-size: 10px;
+    color: #727272;
+    text-align: start;
+}
+
+.box3{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f0f0;
+}
+.box3 .text-container {
+    display: flex;
+    flex-direction: column; 
+}
+.box3 h2{
+    margin: 0px;
+    padding: 5px 0px 0px 10px;
+    font-size: 25px;
+    text-align: start;
+}
+
+.box3 p{
+    margin: 0px;
+    padding: 0px 0px 5px 10px;
+    font-size: 10px;
+    color: #727272;
+    text-align: start;
+}
+.box3 .podio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
+    height: 60px;
+    width: 110px;
+}
+
+.bar-container {
+    display: flex;
+    gap: 2px; /* Espacio entre las barras */
+    justify-content: space-around;
+}
+
+.bar {
+    width: 5px; /* Ancho de cada barra */
+    height: 40px; /* Altura de cada barra */
+    border-radius: 5px;
+}
+
+.bar-1 { background-color: #0d7fff; }
+.bar-2 { background-color: #0c7efe; }
+.bar-3 { background-color: #0c7eff; }
+.bar-4 { background-color: #1d7ffb; }
+.bar-5 { background-color: #2880fb; }
+.bar-6 { background-color: #3b82f8; }
+.bar-7 { background-color: #4e83f6; }
+.bar-8 { background-color: #5c84f4; }
+.bar-9 { background-color: #6d86f3; }
+.bar-10 { background-color: #7b86f1; }
+.bar-11 { background-color: #8c88ee; }
+.bar-12 { background-color: #9089ef; }
+.bar-13 { background-color: #9a89ec; }
+.bar-14 { background-color: #ad8aea; }
+.bar-15 { background-color: #c08de9; }
+.bar-16 { background-color: #db8ee4; }
+.bar-17 { background-color: #ec90e2; }
+.bar-18 { background-color: #fe91e0; }
+.bar-19 { background-color: #fd87b6; }
+.bar-20 { background-color: #fa7a7e; }
+.bar-21 { background-color: #f87054; }
+.bar-22 { background-color: #f66936; }
+.bar-23, .bar-24, .bar-25, 
+.bar-26, .bar-27, .bar-28, 
+.bar-29, .bar-30 { background-color: #474747 }
+
+.disponiblidad{
+    margin: 10px 0px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.monto{
+    color: #727272;
+    font-size: 10px;
+    margin: 10px 0px;
 }
